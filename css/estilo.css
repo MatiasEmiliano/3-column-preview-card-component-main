@@ -1,29 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     color: hsla(0, 0%, 100%, 0.75);
     background-color: hsla(0, 0%, 100%, 0.75);
     font-family:  'Lexend Deca', sans-serif;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em;
 }
-
 
 section{
     display: flex;
     justify-content: center;
 }
 
-
 .tipos{
-    max-width: 200px;
-    min-width: 100px;
+    max-width: 300px;
+    min-width: 200px;
     padding: 50px;
 }
-
 
 #sedans{
     background-color: hsl(31, 77%, 52%);
@@ -32,7 +34,6 @@ section{
     color:  hsl(31, 77%, 52%);
 }
 
-
 #suvs{
     background-color: hsl(184, 100%, 22%);
 }
@@ -40,17 +41,12 @@ section{
     color: hsl(184, 100%, 22%);
 }
 
-
 #luxury{
     background-color: hsl(179, 100%, 13%);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 #luxury button{
     color: hsl(179, 100%, 13%);
 }
-
-
 
 h1{
     color: hsla(0, 0%, 100%, 0.75);
@@ -88,11 +84,7 @@ h1, button, img, p{
     color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 401px){
-    body{
-        justify-content: center;
-    }
-
+@media screen and (min-width: 601px){
     #sedans{
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;   
@@ -104,15 +96,19 @@ h1, button, img, p{
 }
     
   
-
-@media screen and (max-width:400px){
+@media screen and (max-width:600px){
         body{
             justify-content: flex-start;
+            align-items: center;
             height: fit-content;
         }   
-    
+
         section{
              flex-direction: column;
+        }
+
+        .tipos{
+            max-width: 550px;
         }
 
         #sedans{
@@ -124,4 +120,3 @@ h1, button, img, p{
             border-bottom-right-radius: 10px;
         }
     }
-    
