@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Lexend Deca";
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  max-width: 800px;
+}
+
+.card {
+  width: 33.333%;
+  padding: 2rem;
+  color: rgba(255, 255, 255, 0.75);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card_img {
+  width: 20px;
+}
+
+.card__title {
+  margin: 15% 0 15% 0;
+  font-family: "Big Shoulders Display";
+}
+
+.card__desc {
+  line-height: 1.5rem;
+  margin-bottom: 30%;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+}
+
+.card__button {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 15px 30px;
+  margin: 0 auto 0 0;
+  font-family: inherit;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.card__button:hover {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+.card__button--sed {
+  color: #e38826;
+}
+
+.card__button--suv {
+  color: #006970;
+}
+
+.card__button--lux {
+  color: #004241;
+}
+
+.card--sed {
+  background-color: #e38826;
+}
+
+.card--suv {
+  background-color: #006970;
+}
+
+.card--lux {
+  background-color: #004241;
+}
+
+.card--left {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.card--right {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.attribution {
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+  color: black;
+  position: absolute;
+  bottom: 10px;
+}
+
+.attribution__link {
+  color: #3e52a3;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    margin: 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .card {
+    width: 100%;
+  }
+  .card--left {
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0;
+  }
+  .card--right {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1rem;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
